@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 20px;
+  font-style: Arial, sans-serif;
+  color: black;
+}
+
+ul{
+  list-style: none;
+ }
+
+ /* header section */
+header {
+  display: flex;
+  height: 64px;
+  width: auto;
+  align-items: center;
+  padding: 0 24px;
+}
+
+header img {
+  height: 32px;
+  width: auto;
+}
+
+header #academy {
+  color: gray;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+ }
+
+nav ul li {
+  width: auto;
+  margin: 0 8px;
+}
+
+/* banner section */
+
+
+
