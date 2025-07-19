@@ -2,9 +2,44 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 20px;
-  font-style: Arial, sans-serif;
-  color: black;
+  font-size: 28px;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: .83em;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: .67em;
+  font-weight: bold;
 }
 
 ul{
@@ -23,7 +58,7 @@ header {
 header img {
   height: 32px;
   width: auto;
-}
+ }
 
 header #academy {
   color: gray;
@@ -48,5 +83,76 @@ nav ul li {
 
 /* banner section */
 
+#banner {
+  background-color: #D8D8D8;
+  display: flex;
+  width: auto;
+  padding: 32px 24px;
+}
 
+.main {
+  width: 60%;
+  height: auto;
+}
 
+#learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+#learn h4 {
+  margin: 2rem 0;
+}
+
+#button {
+  background-color: #4A4A4A;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 8px;
+}
+
+/* practice section */
+
+#practice {
+  display: flex; 
+  width: auto;
+  padding: 32px 24px;
+}
+
+#main {
+  width: 60%;
+}
+
+#main .main img {
+  width: 60%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.infobox {
+  display: flex;
+  padding: 16px;
+}
+
+.infobox img {
+  width: 35%;
+  height: auto;
+}
+
+.schedule {
+  width: 65%;
+  padding: 0 16px;
+  flex-wrap: nowrap;
+}
+
+.schedule p {
+  padding: 8px 0;
+  
+}
