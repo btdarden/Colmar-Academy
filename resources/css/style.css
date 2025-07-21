@@ -116,6 +116,8 @@ nav ul li {
 
 /* practice section */
 
+/* practice image and text left */
+
 #practice {
   display: flex; 
   width: auto;
@@ -146,6 +148,8 @@ nav ul li {
   width: 40%;
 }
 
+/* info box right */
+
 .infobox {
   display: flex;
   padding: 0 16px;
@@ -171,11 +175,94 @@ nav ul li {
   padding: 8px 0;
 }
 
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-family: arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
+/* start learning section */
+
+#learning {
+  width: auto;
+  background-color: #D8D8D8;
+  padding: 32px 72px;
+}
+
+#learning h2 {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.thumb {
+  height: auto;
+}
+
+.thumbnails {
+  width: 30%;
+  background-color: white;
+  
+} 
+
+.thumbtext {
+  padding: 16px 0 24px 16px;
+  overflow-x: wrap;
+}
+
+.thumbtext h5 {
+  padding: 8px 0;
+}
+
+/* thesis exhibit */
+
+#thesis {
+  width: auto;
+  padding: 32px 0px 32px 24px;
+}
+
+
+#thesis h2 {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+#thesiscontent {
+  display:flex;
+  width: 100%;
+  gap: 24px;
+}
+
+#thesis video {
+  padding-bottom: 32px;
+  width: 100% auto;
+}
+
+#videoleft h3 {
+  padding-bottom: 8px;
+}
+
+#exhibit {
+  display: flex;
+  flex-direction: column;
+  /* width: 40%; */
+  /* padding: 16px 0 16px 16px; */
+  align-items: center;
+}
+
+#exhibit img {
+  width: 35%;
+}
+
+#exhibit .infobox {
+  padding-top: 24px;
+}
+
+/* footer */
+
+footer {
+  display:flex;
+  padding: 16px 24px;
+  width: auto;
+  justify-content: space-between;
+
+}
