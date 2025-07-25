@@ -7,9 +7,11 @@
   </head>
   <body>
     <!-- Header section-->
-     <header>
-      <img src="./resources/images/ic-logo.svg">
-      <h4><span id="colmar">COLMAR</span><span id="academy">ACADEMY</span></h4>
+     <header id="mainheader">
+      <div id="headerleft">
+        <img src="./resources/images/ic-logo.svg">
+        <h4><span id="colmar">COLMAR</span><span id="academy">ACADEMY</span></h4>
+      </div>
       <nav>
         <ul>
           <li>On Campus</li>
@@ -17,6 +19,14 @@
           <li>For Companies</li>
           <li>Sign In</li>
         </ul>
+      </nav>
+     </header>
+     <header id="mobileheader">
+     <nav id="mobilenav">
+        <img src="./resources/images/ic-logo.svg">
+        <img src="./resources/images/ic-on-campus.svg">
+        <img src="./resources/images/ic-online.svg">
+        <img src="./resources/images/ic-login.svg">
       </nav>
      </header>
      <main>
@@ -30,7 +40,18 @@
             <h3>Start Here</h3>
           </div>
         </div>      
-      </section> 
+      </section>
+      <!-- mobile banner -->
+      <section id="mobilebanner">
+        <img class="main" src="./resources/images/banner.jpg">
+          <div id="learn">
+          <h1>Learn something new everyday</h1>
+          <h4>Lorem ipsum dolor sit amet, consecetur adipsicing elit.</h4>
+          <div id="button">
+            <h3>Start Here</h3>
+          </div>
+        </div>      
+      </section>  
     <!-- Keep Practicing Section-->
       <section id="practice">
         <div id="testimonial">
@@ -61,13 +82,45 @@
           <div id="guest" class="infobox">
             <img src="./resources/images/information-guest-lecture.jpg">
             <div class="schedule">
-              <h4>Oue guest lecture</h4>
-              <p>Join a keynote wiwth Oliver Sack about music in medical treatment</p>
+              <h4>Our guest lecture</h4>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <p><a id="#"></a>Read more</a></p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- mobile practice section-->
+       <section id="mobilepractice">
+       <div id="info">
+          <div class="infobox">
+            <img src="./resources/images/information-orientation-mobile.jpg">
+            <div class="schedule">
+              <h4>Orientation date</h4>
+              <p>Tue 10/11 Wed 10/12: 8am-3pm</p>
+              <p><a id="#"></a>Read more</a></p>
+            </div>
+          </div>
+          <div class="infobox">
+            <img src="./resources/images/information-campus-mobile.jpg">
+            <div class="schedule">
+              <h4>Our campus</h4>
+              <p>Find which campus is close by you</p>
+              <p><a id="#"></a>Read more</a></p>
+            </div>
+          </div>
+          <div id="guest" class="infobox">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg">
+            <div class="schedule">
+              <h4>Our guest lecture</h4>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p><a id="#"></a>Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     <!-- Start Learning Section-->
       <section id ="learning">
         <h2>Start Learning</h2>
@@ -126,6 +179,27 @@
               <h5>Analytics, Conent Marketing, Mobile Marketing</h5>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- mobile learning section -->
+      <section id="mobilelearning">
+        <div id="category">
+          <h3>Software engineering</h3>
+        </div>
+        <div id="category">
+          <h3>Computer art</h3>
+        </div>
+        <div id="category">
+          <h3>Design</h3>
+        </div>
+        <div id="category">
+          <h3>Data</h3>
+        </div>
+        <div id="category">
+          <h3>Business</h3>
+        </div>
+        <div id="category">
+          <h3>Marketing</h3>
         </div>
       </section>
     <!-- Thesis Exhibit Section-->

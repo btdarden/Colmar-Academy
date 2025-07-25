@@ -47,12 +47,23 @@ ul{
  }
 
  /* header section */
+@media screen and (width >850px ) {
+  #mobileheader {
+    display: none;
+  }
+}
+
 header {
   display: flex;
   height: 64px;
   width: auto;
   align-items: center;
   padding: 0 24px;
+}
+
+#headerleft {
+  display: inline-flex;
+  width: 50%;
 }
 
 header img {
@@ -64,6 +75,8 @@ header #academy {
   color: gray;
 }
 
+/* main nav */
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -74,14 +87,41 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  flex-wrap: nowrap;
  }
 
 nav ul li {
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 8px;
 }
 
+/* mobile nav */
+@media screen and (width <850px) {
+  #mainheader {
+    display: none;
+  }
+
+  #mobileheader {
+    height: 64px;
+  }
+
+#mobilenav {
+  justify-content: space-between;
+}
+}
+
+
 /* banner section */
+
+/* main */
+
+@media screen and (width >850px) {
+  #mobilebanner {
+    display: none;
+  }
+}
 
 #banner {
   background-color: #D8D8D8;
@@ -96,6 +136,7 @@ nav ul li {
 }
 
 #learn {
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,9 +155,49 @@ nav ul li {
   margin-top: 8px;
 }
 
+/* mobile banner */
+@media screen and (width <850px) {
+  #banner {
+    display: none;
+  }
+
+  #mobilebanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #D8D8D8;
+  }
+
+  #mobilebanner img.main {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #mobilebanner h1 {
+    padding: 32px 0;
+  }
+
+  #mobilebanner h4 {
+    margin: 32px 0 24px 0;
+  }
+
+  #mobilebanner #button {
+    margin: 24px 0 32px 0;
+  }
+
+}
+
+
 /* practice section */
 
 /* practice image and text left */
+
+@media screen and (width >850px) {
+  #mobilepractice {
+    display: none;
+  }
+}
 
 #practice {
   display: flex; 
@@ -131,6 +212,7 @@ nav ul li {
 
 #mainimg img {
   width: auto;
+  object-fit: contain;
 }
 
 #maintext h2 {
@@ -157,7 +239,8 @@ nav ul li {
 
 .infobox img {
   width: 35%;
-  height: auto;
+  object-fit: contain;
+  
 }
 
 #guest.infobox {
@@ -175,7 +258,49 @@ nav ul li {
   padding: 8px 0;
 }
 
+/* mobile practice section */
+
+@media screen and (width <850px) {
+  #practice {
+    display: none;
+  }
+
+#mobilepractice #info {
+  width:100%;
+}
+
+#mobilepractice img {
+  width: 100%;
+  max-height: 225px;
+  object-fit: contain;
+  
+}
+
+  #mobilepractice .infobox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 32px 16px;
+  }
+
+  #mobilepractice #guest.infobox {
+    background-color: white;
+  }
+
+  .schedule {
+    padding: 32px 16px;
+    width: auto;
+    align-self: center;
+  }
+}
+
 /* start learning section */
+
+@media screen and (width >850px) {
+  #mobilelearning {
+    display: none;
+  }
+}
 
 #learning {
   width: auto;
@@ -196,6 +321,7 @@ nav ul li {
 
 .thumb {
   height: auto;
+  object-fit: contain;
 }
 
 .thumbnails {
@@ -205,15 +331,64 @@ nav ul li {
 } 
 
 .thumbtext {
-  padding: 16px 0 24px 16px;
+  width: auto;
+  padding: 16px 24px 16px;
   overflow-x: wrap;
+  overflow-wrap: break-word ;
 }
 
 .thumbtext h5 {
   padding: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+/* mobile learning section */
+@media screen and (width <850px) {
+#gallery {
+  display: none;
+}
+
+#learning {
+  padding: 32px 0 16px 0;
+  background-color: white;
+}
+
+#learning h2 {
+  padding: 0;
+}
+
+#mobilelearning {
+  padding: 0 16px 32px 16px;
+}
+
+#category {
+  width: auto;
+  padding: 16px 0px 24px 16px;
+  background-color: #D8D8D8;
+  margin: 8px 0;
+}
+
 }
 
 /* thesis exhibit */
+
+/* mobile thesis section */
+@media screen and (width <850px) {
+  #thesis #exhibit, #videoleft p, #videoleft h3 {
+    display: none;
+  }
+
+  #thesiscontent {
+    display: block;
+  }
+
+  #videoleft {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
 
 #thesis {
   width: auto;
@@ -241,11 +416,17 @@ nav ul li {
   padding-bottom: 8px;
 }
 
+#videoleft {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
 #exhibit {
   display: flex;
   flex-direction: column;
-  /* width: 40%; */
-  /* padding: 16px 0 16px 16px; */
+  width: 40%;
+  padding: 16px 0 16px 16px;
   align-items: center;
 }
 
@@ -265,4 +446,17 @@ footer {
   width: auto;
   justify-content: space-between;
 
+}
+
+/* mobile footer */
+
+@media screen and (width <850px) {
+  footer nav {
+    display: none;
+  }
+
+  footer p {
+    text-align: center;
+    padding: 16px 0;
+  }
 }
